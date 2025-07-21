@@ -1,0 +1,6 @@
+extend type Mutation {
+    saveEvent(
+        venueReferenceId: String!
+        input: SaveEventInput!
+    ): Event
+}

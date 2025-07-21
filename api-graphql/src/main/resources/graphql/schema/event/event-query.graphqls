@@ -1,0 +1,7 @@
+extend type Query {
+    eventsByVenueId(venueId: String!): [Event]
+}
+
+extend type Query {
+    events(limit: Int): [Event]
+}

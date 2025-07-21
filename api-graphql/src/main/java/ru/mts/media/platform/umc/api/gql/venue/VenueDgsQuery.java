@@ -16,6 +16,8 @@ public class VenueDgsQuery {
 
     @DgsQuery
     public Venue venueByReferenceId(@InputArgument String id) {
-        return Optional.of(id).flatMap(sot::getVenueByReferenceId).orElse(null);
+        return Optional.of(id)
+                .flatMap(sot::getVenueByReferenceId)
+                .orElse(null);
     }
 }
